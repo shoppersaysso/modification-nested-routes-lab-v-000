@@ -30,12 +30,7 @@ class SongsController < ApplicationController
     else
     @song = Song.new(artist_id: params[:artist_id])
   end
-
-
-  redirect_to authors_path, alert: "Author not found."
-   else
-     @post = Post.new(author_id: params[:author_id])
-   end
+  end
 
   
 
